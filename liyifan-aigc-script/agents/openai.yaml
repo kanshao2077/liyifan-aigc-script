@@ -1,0 +1,4 @@
+interface:
+  display_name: "李一帆AIGC教学口播"
+  short_description: "沿用李一帆教学风格，为已确认选题生成完整口播、逐段素材方案与总清单"
+  default_prompt: "使用 $liyifan-aigc-script，根据我给的选题和核心观点，生成李一帆风格的3—5个标题、完整可录口播、逐段素材方案和素材总清单。"
