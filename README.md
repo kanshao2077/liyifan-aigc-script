@@ -2,12 +2,12 @@
 
 把已确认的选题和核心观点写成完整教学口播，再根据现有口播生成简洁的八列分镜初稿，供博主、制作和剪辑团队继续完善。重点是影视原理、案例对比和可执行教学，不是工具新闻改写或“一键成片”宣传。
 
-仓库目前包含两个可以独立使用、也可以前后衔接的 Skill：
+本仓库保留口播Skill；分镜Skill已迁移到独立仓库，两者可以前后衔接使用：
 
 | Skill | 用途 | 调用方式 |
 | --- | --- | --- |
 | `liyifan-aigc-script` | 从选题与核心观点生成完整口播、逐段素材方案和制作清单 | `$liyifan-aigc-script` |
-| `liyifan-storyboard` | 保留口播原文，生成简洁八列分镜初稿，默认Markdown，按需Excel | `$liyifan-storyboard` |
+| [liyifan-storyboard](https://github.com/kanshao2077/liyifan-storyboard) | 保留口播原文，生成简洁八列分镜初稿，默认Markdown，按需Excel | `$liyifan-storyboard` |
 
 口播 Skill 根据用户提供的29篇有效口播样本整理；分镜 Skill 学习博主认可样稿的简洁写法，主要提供画面形式、所需素材和必要剪辑提示。仓库名称描述其目标使用场景，不代表李一帆本人或其公司已审核、发布或背书本项目。
 
@@ -26,7 +26,7 @@
 
 ## 安装与使用
 
-将需要的整个 Skill 文件夹安装到运行环境的 Skill 目录：口播写作用 `liyifan-aigc-script/`，分镜制作用 `liyifan-storyboard/`。Codex 默认目录为 `~/.codex/skills/`；如果同名 Skill 已经存在，先备份并比较差异，不要直接覆盖定制内容。其他支持 `SKILL.md` 的工具按各自加载方式使用。
+将口播Skill的 `liyifan-aigc-script/` 文件夹安装到运行环境的Skill目录；分镜Skill请从 [独立仓库](https://github.com/kanshao2077/liyifan-storyboard) 安装根目录，名称使用 `liyifan-storyboard`。Codex 默认目录为 `~/.codex/skills/`；如果同名 Skill 已经存在，先备份并比较差异，不要直接覆盖定制内容。其他支持 `SKILL.md` 的工具按各自加载方式使用。
 
 写口播时输入：
 
@@ -76,12 +76,12 @@
 
 ### 分镜 Skill
 
-- [SKILL.md](liyifan-storyboard/SKILL.md)：口播拆镜、简洁八列分镜与文件交付。
-- [必要内容核对](liyifan-storyboard/references/script-audit.md)：画面对应口播、事实疑问和简短待确认备注。
-- [字段指南](liyifan-storyboard/references/field-guide.md)：八列填写标准、空列和Markdown/Excel交付。
-- [样稿写法](liyifan-storyboard/references/sample-style.md)：简洁画面、素材需求与必要剪辑提示的短例。
-- [剪辑提示](liyifan-storyboard/references/editing-playbook.md)：普通初稿的必要提示，以及按需细化的边界。
-- [界面配置](liyifan-storyboard/agents/openai.yaml)：显示名称“李一帆分镜skill”与默认调用提示。
+- [SKILL.md](https://github.com/kanshao2077/liyifan-storyboard/blob/main/SKILL.md)：口播拆镜、简洁八列分镜与文件交付。
+- [必要内容核对](https://github.com/kanshao2077/liyifan-storyboard/blob/main/references/script-audit.md)：画面对应口播、事实疑问和简短待确认备注。
+- [字段指南](https://github.com/kanshao2077/liyifan-storyboard/blob/main/references/field-guide.md)：八列填写标准、空列和Markdown/Excel交付。
+- [样稿写法](https://github.com/kanshao2077/liyifan-storyboard/blob/main/references/sample-style.md)：简洁画面、素材需求与必要剪辑提示的短例。
+- [剪辑提示](https://github.com/kanshao2077/liyifan-storyboard/blob/main/references/editing-playbook.md)：普通初稿的必要提示，以及按需细化的边界。
+- [界面配置](https://github.com/kanshao2077/liyifan-storyboard/blob/main/agents/openai.yaml)：显示名称“李一帆分镜skill”与默认调用提示。
 
 ## 验证与边界
 
