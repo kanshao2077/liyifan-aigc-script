@@ -1,4 +1,4 @@
 interface:
   display_name: "李一帆分镜skill"
-  short_description: "把定稿口播审成可拍、可找素材、可直接交给剪辑师执行的完整分镜表"
-  default_prompt: "使用 $liyifan-storyboard，先诊断下面这版口播，再拆成可直接导入飞书的完整分镜表。"
+  short_description: "根据已有口播生成简洁八列分镜初稿，默认Markdown，供团队继续完善"
+  default_prompt: "使用 $liyifan-storyboard，根据下面的口播原文生成简洁的八列Markdown分镜初稿，提示词和两列审核内容留空，画面与制作备注按样稿详略填写。"
